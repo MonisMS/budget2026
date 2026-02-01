@@ -17,11 +17,12 @@ export default function TaxSlabsPage() {
         subtitle="Simplified tax structure with enhanced rebates"
       />
 
+      {/* Notes */}
       {taxSlabsData.notes && taxSlabsData.notes.length > 0 && (
-        <div className="mb-6 bg-blue-50 border border-blue-200 rounded-lg p-4">
-          <ul className="space-y-1">
+        <div className="mb-8 glass rounded-2xl p-5 border-l-4 border-orange-500/50">
+          <ul className="space-y-2">
             {taxSlabsData.notes.map((note, idx) => (
-              <li key={idx} className="text-sm text-blue-800">
+              <li key={idx} className="text-sm text-gray-400">
                 {note}
               </li>
             ))}
@@ -29,24 +30,21 @@ export default function TaxSlabsPage() {
         </div>
       )}
 
-      <div className="bg-white border border-gray-200 rounded-lg p-6 mb-8">
-        <h2 className="text-lg font-semibold text-gray-900 mb-4">Tax Slabs</h2>
-        <Table columns={slabColumns} data={taxSlabsData.slabs} />
+      {/* Tax Slabs Table */}
+      <div className="glass rounded-2xl p-6 mb-8">
+        <h2 className="text-xl font-bold text-white mb-6">Tax Slabs</h2>
+        <Table columns={slabColumns} data={taxSlabsData.slabs} showRateBadges={true} />
       </div>
 
+      {/* Additional Information - Highlight Card */}
       {taxSlabsData.additional_items && taxSlabsData.additional_items.length > 0 && (
         <div>
-          <h2 className="text-lg font-semibold text-gray-900 mb-4">
-            Additional Information
-          </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            {taxSlabsData.additional_items.map((item, idx) => (
-              <InfoCard key={idx}>
-                <h3 className="font-semibold text-gray-900 mb-2">{item.title}</h3>
-                <p className="text-sm text-gray-600">{item.description}</p>
-              </InfoCard>
-            ))}
-          </div>
+          {taxSlabsData.additional_items.map((item, idx) => (
+            <div key={idx} className="glass-highlight rounded-2xl p-6 text-center">
+              <h3 className="font-bold text-white text-xl mb-3">{item.title}</h3>
+              <p className="text-gray-400 max-w-2xl mx-auto">{item.description}</p>
+            </div>
+          ))}
         </div>
       )}
     </div>
