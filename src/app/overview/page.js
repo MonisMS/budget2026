@@ -8,6 +8,9 @@ export default function OverviewPage() {
       <SectionHeader
         title="Budget Overview"
         subtitle="Key figures from the Union Budget 2026-27"
+        centered
+        serif
+        gradient
       />
 
       {/* Key Stats Grid */}

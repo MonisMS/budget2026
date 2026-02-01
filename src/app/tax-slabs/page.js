@@ -15,6 +15,9 @@ export default function TaxSlabsPage() {
       <SectionHeader
         title="New Tax Regime FY 2026-27"
         subtitle="Simplified tax structure with enhanced rebates"
+        centered
+        serif
+        gradient
       />
 
       {/* Notes */}

@@ -38,16 +38,16 @@ export default function QuickLinks({ links }) {
         <Link
           key={item.href}
           href={item.href}
-          className="group glass rounded-2xl p-6 hover-lift flex items-start gap-4"
+          className="group glass rounded-2xl p-6 transition-all duration-300 hover:bg-white/[0.04] hover:-translate-y-1 flex items-start gap-4"
         >
-          <div className="flex-shrink-0 w-12 h-12 rounded-xl bg-gradient-to-br from-orange-500/20 to-green-500/20 flex items-center justify-center text-orange-400 group-hover:text-orange-300 transition-colors">
+          <div className="flex-shrink-0 w-12 h-12 rounded-xl bg-gradient-to-br from-orange-500/20 to-green-500/20 flex items-center justify-center text-orange-400 group-hover:text-orange-300 group-hover:shadow-lg group-hover:shadow-orange-500/10 transition-all duration-300">
             {icons[item.href]}
           </div>
           <div>
-            <h3 className="font-semibold text-white mb-1 group-hover:text-orange-300 transition-colors">
+            <h3 className="font-semibold text-white mb-1 group-hover:text-orange-300 transition-colors duration-200">
               {item.label}
             </h3>
-            <p className="text-sm text-gray-500">
+            <p className="text-sm text-gray-500 group-hover:text-gray-400 transition-colors duration-200">
               View {item.label.toLowerCase()} →
             </p>
           </div>

@@ -8,6 +8,9 @@ export default function FAQPage() {
       <SectionHeader
         title="Common Questions"
         subtitle="Frequently asked questions about the Union Budget 2026-27"
+        centered
+        serif
+        gradient
       />
 
       <Accordion items={faqsData.items} />

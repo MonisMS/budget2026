@@ -8,6 +8,9 @@ export default function HighlightsPage() {
       <SectionHeader
         title="Major Announcements"
         subtitle="Important reforms announced in Budget 2026"
+        centered
+        serif
+        gradient
       />
 
       {/* Announcements */}

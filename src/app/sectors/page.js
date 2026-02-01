@@ -7,6 +7,9 @@ export default function SectorsPage() {
       <SectionHeader
         title="Sector-Wise Budget"
         subtitle="Key ministry allocations for FY 2026-27"
+        centered
+        serif
+        gradient
       />
 
       {/* Desktop Table */}

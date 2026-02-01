@@ -7,16 +7,16 @@ export default function HomePage() {
   return (
     <div>
       {/* Hero Section */}
-      <div className="text-center mb-12 sm:mb-16 pt-8">
+      <div className="text-center mb-12 sm:mb-16 pt-8 sm:pt-12">
         <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass text-sm text-gray-400 mb-6">
           <span>February 1, 2026</span>
           <span className="w-1 h-1 rounded-full bg-gray-600"></span>
           <span>FM Nirmala Sitharaman</span>
         </div>
-        <h1 className="font-display text-4xl sm:text-5xl lg:text-7xl font-bold mb-6 tracking-tight">
-          <span className="gradient-text">{siteData.title}</span>
+        <h1 className="font-serif text-4xl sm:text-5xl lg:text-7xl font-bold mb-6 tracking-tight">
+          <span className="gradient-text-hero">{siteData.title}</span>
         </h1>
-        <p className="text-lg sm:text-xl text-gray-400 max-w-3xl mx-auto leading-relaxed">
+        <p className="text-lg sm:text-xl text-gray-400 max-w-3xl mx-auto leading-relaxed px-4">
           {siteData.subtitle}
         </p>
       </div>
@@ -36,7 +36,7 @@ export default function HomePage() {
 
       {/* Disclaimer */}
       <div className="glass-highlight rounded-2xl p-6 text-center">
-        <p className="text-gray-400 text-sm">
+        <p className="text-gray-400 text-sm leading-relaxed">
           {siteData.disclaimer}
         </p>
       </div>

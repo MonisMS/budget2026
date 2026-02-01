@@ -3,15 +3,29 @@ export default function Table({ columns, data, showRateBadges = false }) {
     return <p className="text-gray-500">No data available.</p>;
   }
 
+  // Map tax rates to specific badge CSS classes
   const getRateBadgeClass = (rate) => {
-    if (!rate) return 'badge-green';
-    const rateStr = rate.toString().toLowerCase();
-    if (rateStr === 'nil' || rateStr.includes('0%')) return 'badge-green';
-    if (rateStr.includes('5%')) return 'badge-green';
-    if (rateStr.includes('10%') || rateStr.includes('15%')) return 'badge-yellow';
-    if (rateStr.includes('20%') || rateStr.includes('25%')) return 'badge-orange';
-    if (rateStr.includes('30%')) return 'badge-red';
-    return 'badge-green';
+    if (!rate) return 'badge-nil';
+    const rateStr = rate.toString().toLowerCase().trim();
+    
+    // Check for exact matches first
+    if (rateStr === 'nil' || rateStr === '0%' || rateStr === '0') return 'badge-nil';
+    if (rateStr === '5%' || rateStr === '5') return 'badge-5';
+    if (rateStr === '10%' || rateStr === '10') return 'badge-10';
+    if (rateStr === '15%' || rateStr === '15') return 'badge-15';
+    if (rateStr === '20%' || rateStr === '20') return 'badge-20';
+    if (rateStr === '25%' || rateStr === '25') return 'badge-25';
+    if (rateStr === '30%' || rateStr === '30') return 'badge-30';
+    
+    // Fallback for partial matches
+    if (rateStr.includes('30')) return 'badge-30';
+    if (rateStr.includes('25')) return 'badge-25';
+    if (rateStr.includes('20')) return 'badge-20';
+    if (rateStr.includes('15')) return 'badge-15';
+    if (rateStr.includes('10')) return 'badge-10';
+    if (rateStr.includes('5')) return 'badge-5';
+    
+    return 'badge-nil';
   };
 
   return (
@@ -35,12 +49,9 @@ export default function Table({ columns, data, showRateBadges = false }) {
             {data.map((row, idx) => (
               <tr key={idx} className="hover:bg-white/[0.02] transition-colors">
                 {columns.map((col) => (
-                  <td
-                    key={col.key}
-                    className="px-4 py-4 text-sm"
-                  >
+                  <td key={col.key} className="px-4 py-4 text-sm">
                     {col.key === 'rate' && showRateBadges ? (
-                      <span className={`inline-flex px-3 py-1 rounded-full text-xs font-semibold ${getRateBadgeClass(row[col.key])}`}>
+                      <span className={getRateBadgeClass(row[col.key])}>
                         {row[col.key] || '—'}
                       </span>
                     ) : (
@@ -68,7 +79,7 @@ export default function Table({ columns, data, showRateBadges = false }) {
               <div key={col.key} className="flex justify-between items-center">
                 <span className="text-xs text-gray-500 uppercase tracking-wider">{col.label}</span>
                 {col.key === 'rate' && showRateBadges ? (
-                  <span className={`inline-flex px-3 py-1 rounded-full text-xs font-semibold ${getRateBadgeClass(row[col.key])}`}>
+                  <span className={getRateBadgeClass(row[col.key])}>
                     {row[col.key] || '—'}
                   </span>
                 ) : (
