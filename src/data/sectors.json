@@ -1,0 +1,52 @@
+{
+  "items": [
+    {
+      "sector": "Defence",
+      "allocation": "₹7.84L Cr",
+      "change": "↑ 15.3%",
+      "note": "Highest-ever allocation with focus on indigenous manufacturing and modernization."
+    },
+    {
+      "sector": "Railways",
+      "allocation": "₹2.65L Cr",
+      "change": "↑ 10.2%",
+      "note": "New high-speed rail corridors and Vande Bharat expansion across the country."
+    },
+    {
+      "sector": "Agriculture",
+      "allocation": "₹1.52L Cr",
+      "change": "↑ 8.5%",
+      "note": "PM-KISAN, crop insurance, and natural farming initiatives support."
+    },
+    {
+      "sector": "Healthcare",
+      "allocation": "₹99,000 Cr",
+      "change": "↑ 12.8%",
+      "note": "Ayushman Bharat expansion, new AIIMS, and digital health infrastructure."
+    },
+    {
+      "sector": "Education",
+      "allocation": "₹1.28L Cr",
+      "change": "↑ 7.4%",
+      "note": "NEP implementation, skill development, and digital education push."
+    },
+    {
+      "sector": "Infrastructure",
+      "allocation": "₹12.2L Cr",
+      "change": "↑ 11.1%",
+      "note": "Roads, highways, ports, airports under PM Gati Shakti mission."
+    },
+    {
+      "sector": "Rural Development",
+      "allocation": "₹95,000 Cr",
+      "change": "↑ 6.2%",
+      "note": "MGNREGA (₹30,000 Cr), rural housing, and drinking water projects."
+    },
+    {
+      "sector": "Manufacturing",
+      "allocation": "₹45,000 Cr",
+      "change": "↑ 18.5%",
+      "note": "PLI scheme expansion and semiconductor manufacturing support."
+    }
+  ]
+}

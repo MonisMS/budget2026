@@ -1,0 +1,26 @@
+{
+  "cards": [
+    { "label": "Total Budget", "value": "₹53L Cr" },
+    { "label": "Fiscal Deficit", "value": "4.3%" },
+    { "label": "Capital Expenditure", "value": "₹12.2L Cr" },
+    { "label": "Tax-Free Income", "value": "₹12L" },
+    { "label": "CAPEX % of GDP", "value": "4.4%" }
+  ],
+  "bullets": [
+    "February 1, 2026 · FM Nirmala Sitharaman"
+  ],
+  "revenue_sources": [
+    { "label": "GST & Other Taxes", "value": "28%" },
+    { "label": "Income Tax", "value": "19%" },
+    { "label": "Corporation Tax", "value": "17%" },
+    { "label": "Borrowings", "value": "24%" },
+    { "label": "Non-Tax Revenue", "value": "8%" }
+  ],
+  "expenditure": [
+    { "label": "Interest Payments", "value": "20%" },
+    { "label": "State Transfers", "value": "18%" },
+    { "label": "Defence", "value": "15%" },
+    { "label": "Central Schemes", "value": "16%" },
+    { "label": "Subsidies", "value": "8%" }
+  ]
+}

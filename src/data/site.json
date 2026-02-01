@@ -1,0 +1,13 @@
+{
+  "title": "Union Budget 2026-27",
+  "subtitle": "A Yuva Shakti-driven budget focusing on the poor, underprivileged, and middle class with record infrastructure spending",
+  "nav": [
+    { "label": "Home", "href": "/" },
+    { "label": "Overview", "href": "/overview" },
+    { "label": "Tax Slabs", "href": "/tax-slabs" },
+    { "label": "Sectors", "href": "/sectors" },
+    { "label": "Highlights", "href": "/highlights" },
+    { "label": "FAQ", "href": "/faq" }
+  ],
+  "disclaimer": "Data sourced from official government releases."
+}

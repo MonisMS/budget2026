@@ -1,0 +1,66 @@
+{
+  "announcements": [
+    {
+      "title": "Zero Tax up to ₹12 Lakhs",
+      "description": "Enhanced rebate under new tax regime makes income up to ₹12 lakhs completely tax-free."
+    },
+    {
+      "title": "Record Capital Expenditure",
+      "description": "₹12.2 lakh crore capex at 4.4% of GDP — the highest ever allocation for infrastructure."
+    },
+    {
+      "title": "Defence Modernization",
+      "description": "15.3% increase to ₹7.84 lakh crore with focus on Atmanirbhar Bharat."
+    },
+    {
+      "title": "STT Hike on F&O",
+      "description": "Securities Transaction Tax increased to discourage speculative derivatives trading."
+    },
+    {
+      "title": "Customs Duty Reform",
+      "description": "Strategic tariff changes to counter global trade pressures and boost domestic manufacturing."
+    },
+    {
+      "title": "Green Energy Push",
+      "description": "₹35,000 crore for renewable energy, EV infrastructure, and green hydrogen mission."
+    }
+  ],
+  "initiatives": [
+    {
+      "title": "PM Gati Shakti 2.0",
+      "description": "AI-driven infrastructure planning"
+    },
+    {
+      "title": "Yuva Rozgar",
+      "description": "Employment-linked incentives"
+    },
+    {
+      "title": "Natural Farming",
+      "description": "1 crore chemical-free farmers"
+    },
+    {
+      "title": "Housing 3.0",
+      "description": "3 crore affordable homes"
+    },
+    {
+      "title": "Innovation Fund",
+      "description": "₹10,000 Cr for deep-tech"
+    },
+    {
+      "title": "Green Hydrogen",
+      "description": "Accelerated infrastructure"
+    },
+    {
+      "title": "Semiconductor PLI",
+      "description": "Extended chip incentives"
+    },
+    {
+      "title": "Digital University",
+      "description": "Online degrees for all"
+    },
+    {
+      "title": "EV Push",
+      "description": "Extended subsidies & charging"
+    }
+  ]
+}
